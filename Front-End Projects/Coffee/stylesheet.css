@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --main-color: #deab5f;
+    --primary-color: #312e2e;
+}
+
+/* utility styles */
+button{
+    padding: 10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor:pointer;
+
+}
+
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #100e0f;
+    padding-top: 30px;
+}
+
+ 
+/* nav start */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+
+.logo{
+    transform: translate(-100px, -20px);
+    font-size: 3rem;
+}
+
+li{
+    display:inline;
+    list-style: none;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;   
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* nav end */
+
+/* header start */
+.header{
+    background: url(jakub-dziubak-XtUd5SiX464-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80rem;
+    font-family: "Playfair Display", serif;
+    font-weight:normal;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    position: relative;
+    text-align: center;
+}
+
+.main-headings{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 20px;
+    margin-bottom: -40px;
+}
+
+.primary-heading{
+    position: absolute;
+    bottom: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background: transparent;
+    background:var(--main-color);
+    transform: translateY(10px);
+    
+}
+/* header end */
+
+/* our story start */
+#our-story{
+    height:100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-100px);
+}
+
+.img{
+    width: 1100px;
+    height: 1100px;
+    background: url(jen-p-FoG8lotg7AA-unsplash.jpg);
+    background-size: cover; 
+    transition-duration: 2s;
+}
+
+.img:hover{
+    transition-property: all;
+    transition-duration: 2s;
+    width: 1200px;
+    height: 1200px;
+}
+
+.title-style{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: white;
+    transform: translatex(-100px);
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background:white;
+    transform: translatex(-120px);
+}
+
+.section-content p{
+    max-width: 500px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+
+/* our story end */
+
+/* coffee start */
+.coffee-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: 20px;
+}
+
+.content-section{
+    max-width: 500px;
+}
+.img-2{
+    width: 800px;
+    height: 600px;
+    border: 3px solid var(--main-color);
+    margin-right: 30px;
+}
+
+.title-two{
+    font-size: 3rem;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* coffee end */
+
+
+/* products start */
+
+.products{
+    margin-top: 5rem;
+    background-color: blanchedalmond;
+
+}
+
+.title-three{
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+    background-color: cornsilk;
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    border: 3px solid var(--main-color);
+}
+
+.img-one{
+    background: url(nathan-dumlao-r-KfktlyBL0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-two{
+    background: url(jeffrey-wegrzyn-hdnsLAU35kY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-three{
+    background: url(toa-heftiba-WsDF95mSUsI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-title{
+    color: var(--primary-color);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-top: 50px;
+    transform: translateY(-60px);
+}
+
+.card .items p{
+    color: var(--primary-color);
+    margin: 20px 0px;
+    font-family: sans-serif;
+    transform: translate(10px,-70px);
+}
+
+.card .items p:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+/* products end */
+
+
+footer{
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+footer .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+footer .heading-info{
+    margin-bottom: 20px;
+}
+
+footer p{
+    line-height: 25px;
+}
+
+span{
+    margin-left: 8px;
+    color: var(--main-color);
+}
+
+/* project end */
+
+/* responsiveness */
+@media only screen and(max-width: 768px){
+    
+    .main-headings, .primary-heading{
+        margin:0 auto;
+        font-size: 2.5rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+
+    #our-story .title{
+        transform:translateX(50px);
+    }
+    #our-story.line{
+        display: none;
+    }
+
+    #our-story .img-container .img{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .cofffee-container .img-container{
+        margin-top: 5rem;
+        width: 50%;
+    }
+    .title-two{
+        margin:0 auto;
+    }
+}
