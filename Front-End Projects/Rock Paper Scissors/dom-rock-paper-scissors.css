@@ -1,0 +1,60 @@
+body{
+    background: black;
+    color: white;
+}
+
+.button{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.button:hover{
+    color: black;
+    background-color: white;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 85px;
+}
+.js-result{
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.js-moves{
+    margin-left: 130px;
+}
+
+.js-score{
+    margin-left: 70px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.reset{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    padding: 20px;
+    margin-left: 155px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reset:hover{
+    color: black;
+    background-color: white;
+}

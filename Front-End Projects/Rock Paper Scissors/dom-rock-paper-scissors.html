@@ -1,0 +1,54 @@
+//Document Object Model
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom-rock-paper-scissors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src = "dom-rock-paper-scissors.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <p class="title">Rock Paper Scissors</p>
+
+
+    <button class="button" onclick="
+
+    playGame('rock');
+
+    ">
+    <i class="icon fa-regular fa-hand-back-fist fa-2xl"></i>
+    </button>
+
+
+    <button class="button" onclick="
+
+    playGame('paper');
+
+    ">
+    <i class="icon fa-regular fa-hand fa-2xl"></i>
+    </button>
+
+    
+    <button class="button"
+    onclick="
+
+    playGame('scissors');
+
+    ">
+    <i class="icon fa-regular fa-hand-scissors fa-2xl"></i>
+    </button>
+
+    <p class="js-score"></p>
+    <p class="js-moves"></p>
+    <p class="js-result"></p>
+
+    <button class="reset" onclick="
+    
+    resetScore();
+
+    "
+    >Reset</button>
+</body>
+</html>
